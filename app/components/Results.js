@@ -6,6 +6,8 @@ var styles= require('../styles');
 var UserDetails=require('./UserDetails');
 var UserDetailsWrapper=require('./UserDetailsWrapper');
 var MainContainer=require('./MainContainer');
+var Loading = require('./Loading');
+
 
 function StartOver (){
 	return(
@@ -29,7 +31,7 @@ function Tie (props) {
 function Results(props){
 	if(props.isLoading===true){
 		return(
-			<p>LOADING</p>
+			<Loading/>
 			)
 	}
 
