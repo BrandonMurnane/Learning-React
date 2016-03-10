@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "production": "webpack -p",
-    "start": "webpack-dev-server --host 127.0.0.1 --port 5050"
+    "start": "webpack-dev-server "
   },
   "author": "",
   "license": "ISC",

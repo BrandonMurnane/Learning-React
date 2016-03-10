@@ -36,7 +36,7 @@ var PromptContainer = React.createClass({
 	},
 	render : function (){
 		return(
-			<Prompt 
+			<Prompt
 			onSubmitUser={this.handleSubmitUser}
 			onUpdateUser={this.handleUpdateUser}
 			header={this.props.route.header}
