@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "production": "webpack -p",
-    "start": "webpack-dev-server "
+    "Local": "webpack-dev-server ",
+    "dev": "webpack-dev-server --content-base dis/ --progress --colors",
+    "start": "NODE_ENV=production node server.js",
+    "postinstall": "webpack -p --config webpack.prod.config.js --profile --progress --colors"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.9.1",
+    "express": "^4.13.4",
     "react": "^0.14.7",
     "react-addons-css-transition-group": "^0.14.7",
     "react-dom": "^0.14.7",
