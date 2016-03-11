@@ -30,7 +30,7 @@ var ConfirmBattleContainer = React.createClass({
 			}
 		})
 	},
-	render() {
+	render:function () {
 		return (
 			<ConfirmBattle
 				isLoading ={this.state.isLoading}

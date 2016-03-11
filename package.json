@@ -2,11 +2,12 @@
   "name": "github-battle",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --content-base dis/ --progress --colors",
-    "start": "NODE_ENV=production node server.js",
-    "postinstall": "webpack -p --config webpack.prod.config.js --profile --progress --colors"
+    "production": "webpack -p",
+    "Local-start": "webpack-dev-server ",
+        "dev": "webpack-dev-server --content-base public/ --progress --colors",
+    "start": "NODE_ENV=production node server.js"
   },
   "author": "",
   "license": "ISC",
