@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "production": "webpack -p",
     "Local-start": "webpack-dev-server ",
     "dev": "webpack-dev-server --content-base public/ --progress --colors",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+     "postinstall": "webpack -p --config webpack.prod.config.js --profile --progress --colors"
   },
   "author": "",
   "license": "ISC",
